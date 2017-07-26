@@ -4,7 +4,7 @@
 
             <!-- LOGO -->
             <div class="topbar-left">
-                <a href="index.html" class="logo"><img src="{!! url('images/synrgise-logo.png') !!}"></a>
+                <a href="{!! url('/') !!}" class="logo"><img src="{!! url('images/synrgise-logo.png') !!}"></a>
             </div>
             <!-- End Logo container-->
 

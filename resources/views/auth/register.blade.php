@@ -22,6 +22,17 @@
                         </div>
                     </div>
 
+                    <div class="form-group{{ $errors->has('surname') ? ' has-error' : '' }}">
+                        <div class="col-xs-12">
+                            <input class="form-control input-lg" type="text" name="surname" placeholder="Surname" value="{{ old('surname') }}" required>
+                            {{--@if ($errors->has('name'))--}}
+                            {{--<span class="help-block">--}}
+                            {{--<strong>{{ $errors->first('name') }}</strong>--}}
+                            {{--</span>--}}
+                            {{--@endif--}}
+                        </div>
+                    </div>
+
                     <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                         <div class="col-xs-12">
                             <input class="form-control input-lg" type="email" name="email" placeholder="Email Address" value="{{ old('email') }}" required>

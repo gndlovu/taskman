@@ -31,17 +31,19 @@
                     <table class="table table-hover table-striped" style="font-size: small">
                         <thead>
                         <tr>
-                            <th width="15%">User Name</th>
-                            <th width="20%">E-mail Address</th>
+                            <th width="10%">Name</th>
+                            <th width="10%">Surname</th>
+                            <th width="15%">E-mail Address</th>
                             <th width="15%">Created At</th>
-                            <th width="35%" class="text-center">User Access</th>
-                            <th width="5%" class="text-center"></th>
+                            <th width="38%" class="text-center">User Access</th>
+                            <th width="2%" class="text-center"></th>
                         </tr>
                         </thead>
                         <tbody>
                         @foreach($users as $user)
                             <tr>
                                 <td>{!! $user->name !!}</td>
+                                <td>{!! $user->surname !!}</td>
                                 <td>{!! $user->email !!}</td>
                                 <td>{!! $user->created_at !!}</td>
                                 <td class="text-center">
